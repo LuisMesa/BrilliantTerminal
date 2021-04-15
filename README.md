@@ -9,6 +9,11 @@ or
 nodemon index.js
 ```
 
+## How to run tests
+```
+npm test
+```
+
 ## Progress log
 **08:18 - 08:50:**
 Understanding the problem and planning how to solve it.
