@@ -2,11 +2,11 @@ const horizontalInstruction = "H";
 const verticalInstruction = "V";
 const switchInstruction = "S";
 
-function horizontalFlip(oldKeyboard, times = 1) {
+function flipHorizontally(oldKeyboard, times = 1) {
   return flipIfNeeded(oldKeyboard, times, () => oldKeyboard.map((row) => [...row].reverse()));
 }
 
-function verticalFlip(oldKeyboard, times = 1) {
+function flipVertically(oldKeyboard, times = 1) {
   return flipIfNeeded(oldKeyboard, times, () => [...oldKeyboard].reverse());
 }
 
@@ -43,9 +43,9 @@ function shift(oldKeyboard, movements) {
 function getTransformationByInstruction(instruction) {
   switch (instruction) {
     case horizontalInstruction:
-      return horizontalFlip;
+      return flipHorizontally;
     case verticalInstruction:
-      return verticalFlip;
+      return flipVertically;
     case switchInstruction:
       return shift;
     default:
@@ -54,6 +54,9 @@ function getTransformationByInstruction(instruction) {
 }
 
 module.exports = {
+  flipHorizontally,
+  flipVertically,
+  shift,
   getTransformationByInstruction,
   constants: {
     horizontalInstruction,

@@ -1,8 +1,8 @@
-const { buildKeyboard } = require("./utils/keyboards");
+const { buildKeyboardByName } = require("./utils/keyboards");
 const { translateInstructionsToTransformations } = require("./instructions");
 const { printKeyboard } = require("./utils/printService");
 
-const initialKeyboard = buildKeyboard("qwerty");
+const initialKeyboard = buildKeyboardByName("qwerty");
 
 function executeInstructions(keyboard, instructions) {
   const transformations = translateInstructionsToTransformations(instructions);
