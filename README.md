@@ -43,7 +43,7 @@ Multiple improvements were implemented 🧐:
 **14:15 - 15:30:**
 20 Tests using Jest were implemented and all of them are working properly 🎉
 
-**14:15 - 15:45:**
+**15:30 - 15:45:**
 The progress log was created.
 
 ## Relevant links
